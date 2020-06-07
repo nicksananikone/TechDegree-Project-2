@@ -29,11 +29,13 @@ li {
 a {
   text-decoration: none;
   color: #696969;
+}
 
+img {
+  max-width: 100%;
 }
 
 /* Navigation */
-
 .name {
   margin: 0;
   padding-top: 15px;
@@ -43,10 +45,10 @@ a {
   padding-right: 40px;
 }
 
-
 .nav li {
   display: block;
   margin-bottom: 1em;
+
 }
 
 a:hover {
@@ -54,7 +56,6 @@ a:hover {
 }
 
 /* Header */
-
 .main-header {
   background: #fff5ee;
   text-align: center;
@@ -67,9 +68,9 @@ a:hover {
 }
 
 .profile-pic {
-    width: 325px;
-    height: 325px;
-    border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 .portfolio-image {
@@ -77,7 +78,6 @@ a:hover {
 }
 
 /* Containers */
-
 .main-container {
   text-align: center;
 }
@@ -94,7 +94,6 @@ a:hover {
 }
 
 /* Skills */
-
 .skills {
   background: #fff5ee;
   width: 100%;
@@ -114,13 +113,14 @@ a:hover {
   padding: 1em;
 }
 
-  #email {
-    margin-bottom: 0;
-  }
-
-
+#email {
+  margin-bottom: 0;
+}
 
 /* Footer */
+.nav-list {
+  display: none;
+}
 
 .main-footer {
   text-align: center;
@@ -132,15 +132,18 @@ a:hover {
 .name-footer {
   margin-top: 0;
   padding-top: 1em;
+  padding-left: 1em;
+  display: inline-block;
+  float: left;
 }
 
 .nav-footer {
   padding-right: 40px;
+  display: inline-block;
+  float: right;
 }
 
-
 /* Media Queries */
-
 @media (min-width: 768px) {
 
   .main-nav,
@@ -149,12 +152,11 @@ a:hover {
     margin: 0 auto;
   }
 
-
   .nav li,
   .nav-footer li {
     display: inline-block;
     margin-left: 15px;
-    border-bottom: solid 1px black;
+
   }
 
   .profile-pic {
@@ -173,15 +175,22 @@ a:hover {
     padding-right: 40px;
   }
 
+  .nav-li {
+    display: inline-block;
+    float: right;
   }
 
-  @media (min-width: 1024px) {
+  .nav-footer .top {
+    display: none;
+  }
+}
 
+@media (min-width: 1024px) {
   .name {
     position: absolute;
     left: 1em;
     top: 1em;
-}
+  }
 
   .nav {
     position: absolute;
@@ -197,7 +206,6 @@ a:hover {
   .profile-banner {
     padding-top: 90px;
     padding-right: 50px;
-
   }
 
   .profile-pic {
@@ -213,45 +221,51 @@ a:hover {
     width: 50%;
     padding-top: 70px;
     font-size: 1.5em;
-}
-
-.main-container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1150px;
-
-}
-.portfolio-container {
-  width: 33.33%;
-  float: left;
-
-}
-
-.contact {
-  display: inline-block;
-}
-
-.main-footer {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.name-footer {
-  display: inline-block;
-  float: left
-}
-
-.nav-footer {
-  display: inline-block;
-  float: right;
-}
-
   }
 
-
-  /* Float Clearfix */
-
-  .clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
+  .main-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1150px;
   }
+
+  .portfolio-container {
+    width: 33.33%;
+    float: left;
+  }
+
+  .contact {
+    display: inline-block;
+  }
+
+  .main-footer {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .name-footer {
+    display: inline-block;
+    float: left
+  }
+
+  .nav-footer {
+    display: inline-block;
+    float: right;
+  }
+
+  .nav-li {
+    display: inline-block;
+    float: right;
+  }
+
+  .nav-footer .top {
+    display: none;
+  }
+}
+
+/* Float Clearfix */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
