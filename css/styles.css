@@ -132,15 +132,22 @@ a:hover {
 .name-footer {
   margin-top: 0;
   padding-top: 1em;
-  padding-left: 1em;
+  padding-left: 10px;
   display: inline-block;
   float: left;
+
 }
 
 .nav-footer {
-  padding-right: 40px;
+  padding-left: 0;
+  padding-right: 10px;
   display: inline-block;
   float: right;
+}
+
+ul .nav-footer {
+  padding-left: 0;
+  padding-right: 10px;
 }
 
 /* Media Queries */
