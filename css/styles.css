@@ -134,7 +134,6 @@ a:hover {
   margin-top: 10px;
   padding-top: 1em;
   padding-left: 10px;
-  display: inline-block;
   float: left;
 
 }
@@ -142,7 +141,6 @@ a:hover {
 .nav-footer {
   padding-left: 0;
   padding-right: 10px;
-  display: inline-block;
   float: right;
 }
 
@@ -184,7 +182,6 @@ ul .nav-footer {
   }
 
   .nav-li {
-    display: inline-block;
     float: right;
   }
 
@@ -252,19 +249,14 @@ ul .nav-footer {
   }
 
   .name-footer {
-    display: inline-block;
     float: left
   }
 
-  .nav-footer {
-    display: inline-block;
+  .nav-footer,
+  .nav-li  {
     float: right;
   }
 
-  .nav-li {
-    display: inline-block;
-    float: right;
-  }
 
   .nav-footer .top {
     display: none;
