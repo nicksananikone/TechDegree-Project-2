@@ -5,6 +5,7 @@
 h1,
 h2,
 h3,
+h4,
 li {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
@@ -130,7 +131,7 @@ a:hover {
 }
 
 .name-footer {
-  margin-top: 0;
+  margin-top: 10px;
   padding-top: 1em;
   padding-left: 10px;
   display: inline-block;
